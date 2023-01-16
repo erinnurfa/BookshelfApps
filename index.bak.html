@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bookshelf App</title>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-title">
+                BOOKSHELF APP
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="book-wrapper">
+            <div class="book-wrapper-item">
+                <div class="book-form">
+                    <div class="book-form-title text-center">
+                        Tambah Buku Baru
+                    </div>
+                    <form action="#!" id="form-tambah-buku">
+                        <div class="form-group">
+                            <label for="judul" class="form-label">Judul<sup style="color: #FF2E63;">*</sup></label>
+                            <input type="text" name="judul" id="judul" placeholder="judul buku" class="form-field">
+                        </div>
+                        <div class="form-group">
+                            <label for="penulis" class="form-label">Penulis<sup style="color: #FF2E63;">*</sup></label>
+                            <input type="text" name="penulis" id="penulis" placeholder="penulis buku"
+                                class="form-field">
+                        </div>
+                        <div class="form-group">
+                            <label for="tahun" class="form-label">Tahun<sup style="color: #FF2E63;">*</sup></label>
+                            <input type="number" min="0" name="tahun" placeholder="tahun terbit buku" id="tahun"
+                                class="form-field">
+                        </div>
+                        <div class="form-checkbox form-group">
+                            <label for="status" class="form-checkbox-label">Sudah dibaca</label>
+                            <input type="checkbox" name="status" id="status">
+                        </div>
+                        <div class="form-group mt-2">
+                            <button class="btn btn-primary">
+                                TAMBAH
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="book-search-form">
+                    <div class="book-search-form-title text-center">
+                        Cari Buku
+                    </div>
+                    <div class="form-inline">
+                        <input type="text" name="cariJudul" id="cariJudul" placeholder="cari buku" class="form-field">
+                    </div>
+                </div>
+            </div>
+            <div class="book-wrapper-item">
+                <div class="book-list">
+                    <div class="book-list-title">
+                        Selesai
+                    </div>
+                    <div class="list-books complete"></div>
+                </div>
+                <div class="book-list">
+                    <div class="book-list-title">
+                        Belum Selesai
+                    </div>
+                    <div class="list-books uncomplete"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
